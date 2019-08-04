@@ -17,6 +17,7 @@ import { EventsAppComponent } from './events-app.component';
 import { NavbarComponent } from './nav/navbar.component';
 import { ToastrService } from './common/toastr.service';
 import { Error404Component } from './errors/Error404.component';
+import { AuthService } from './user/auth.service';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { Error404Component } from './errors/Error404.component';
     Error404Component
   ],
   providers: [
+    AuthService,
     EventService,
     ToastrService,
     EventRouteActivator,
@@ -45,7 +47,7 @@ import { Error404Component } from './errors/Error404.component';
 export class AppModule { }
 
 export function checkDirtyState(component: CreateEventComponent) {
-  if (component.isDirty){
+  if (component.isDirty) {
     return window.confirm('You have not saved this event, do you really want to cancel?');
   } else {
     return true;
