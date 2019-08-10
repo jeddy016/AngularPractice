@@ -5,13 +5,18 @@ import { IUser } from './user.model';
 export class AuthService {
     currentUser: IUser;
 
+    updateCurrentUser(firstName: string, lastName: string) {
+        this.currentUser.firstName = firstName;
+        this.currentUser.lastName = lastName;
+    }
+
     loginUser(userName: string, password: string) {
-          this.currentUser = {
-              id: 1,
-              firstName: 'Test',
-              lastName: 'User',
-              userName: userName
-          };
+        this.currentUser = {
+            id: 1,
+            firstName: 'Test',
+            lastName: 'User',
+            userName: userName
+        };
     }
 
     isAuthenticated() {
