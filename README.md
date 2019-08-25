@@ -1,4 +1,4 @@
-# AngularPractice (Work in Progress)
+# AngularPractice 
 
 I'm writing this app along with the Pluralsight tutorial "Angular Fundamentals". It is a JS/HTML/CSS app that displays info about upcoming Angular-related events.
 
