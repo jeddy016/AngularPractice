@@ -10,6 +10,4 @@ I'm writing this app along with the Pluralsight tutorial "Angular Fundamentals".
 * Routing
 * Forms/Validation
 * Pipes
-* HTTP Calls
-* Unit testing
-* Deployment
+* HTTP Calls w/ rxjs 
